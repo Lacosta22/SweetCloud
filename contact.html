@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Sweet Cloud :: Contact Us</title>
+		<meta charset="utf-8">
+		<meta name="viewport" 
+		content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="web74.css">
+		<meta name="description" content="Sweet Cloud is a heavenly cotton candy store. We rent cotton candy machines and sell supplies needed to make cotton candy.">
+		<script src="js/modernizr.custom.05819.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+		<header>
+			<h1>Sweet Cloud</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a> 
+				<li><a href="classes.html">Classes</a> 
+				<li><a href="schedule.html">Schedule</a>
+				<li><a href="contact.html">Contact</a>
+				<li><a href="store.html">Store</a>
+			</ul>	  
+		</nav>
+		<main>
+		
+		<form method="post" 
+		action="rcv_msg.html" onsubmit="return validateForm();">
+		<label for="myFName">First Name:</label>
+		<input type="text" name="myFName" id="myFName"
+			   required="required" placeholder="First Name">
+		<label for="myLName">Last Name:</label>
+		<input type="text" name="myLName" id="myLName"
+			   required="required" placeholder="Last Name">
+		<label for="myEmail">E-mail:</label>
+		<input type="email" name="myEmail" id="myEmail">
+			   <required="required" placeholder="you@yourdomain.com"><br><br>
+		<label for="myQuestions"></label>
+		<textarea name="myQuestions" id="myQuestions" rows="2" cols="20" required="required" placeholder="Type your question(s)"></textarea>
+		<input id="mySubmit" type="submit" value="Send Now" onclick="submitForm()">
+		</form>	
+		</main>
+		<footer>
+		</footer>
+		
+		</div>
+	
+		<script>
+		function validateForm() {
+		if (document.forms[0].myEmail.value == "" ){
+			throw("Please enter an e-mail address.");
+			return false;
+		} 
+		return true;
+		} 
+		
+		</script>	
+	</body>
+
+</html>
