@@ -4,11 +4,13 @@ header, nav, main, footer {
 }
 body {
     background-image: url("images/c21.jpg");
-    background-color: snow;
+    background-repeat: no-repeat;
+    height: auto;
     background-size: 100%;
     color: #B11181 ; 
     font-family: Verdana, Arial, sans-serif;
 }
+
 header {
     background-image: url("images/clouds.png");
     background-size: 100%;
@@ -46,7 +48,8 @@ nav ul{
     list-style-type: none; margin: 0; padding: 0;
 }
 
-
+#login { padding-left: 23em;
+          }
 
 .studio { 
     font-style: italic;
@@ -109,21 +112,98 @@ article {
 input {
     float: left;
 }
-form {
-    margin-top: 2em; 
-    float: left; }
+form { float: left; }
 
 label {
    float: left;
    font-size: 1em;
 }
-#submit {  
-          margin-left: 14em;}
+#submit { 
+        margin-top: 4em;
+        margin-left: 44em; }
+form {
+  border: none;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #CC9DE5;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+button:hover {
+  opacity: 0.8;
+}
+#login { margin-left: 3em; }
+.cancelbtn {
+  width: auto;
+  padding: 10px 10px;
+  background-color: #f44336;
+  float: left;
+  margin-top: 1em;
+}
+.container {
+  padding: 10px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+#easy {  }
+#easy h2{ text-decoration: underline;
+          float: none;
+       }
+#easy p {float: right;}
+.step{ float: left; }
+
+#rcvdMsg { box-sizing: content-box;
+           border: double skyblue 10px;
+           text-align: center;
+           color: black;
+           font-weight: bold;
+           font-size: 30px;
+           width: 80%;
+            }
+#myEmail { 
+           padding-top: 1em;
+           }
+#myQuestions { padding: 2em;
+               padding-top: 1em;
+               margin-top: 4em;
+               
+                }
+#mySubmit { margin-top: 15em;
+            float: left;
+            }
+
+/* MOBILE SETTINGS
+TRIAL No2*/
+@media screen and (max-width: 300px) {
+  form { height: auto; }
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+    }
+}
 
 #mobile{ display: none; }
 #desktop{ display: inline; }
 @media only screen and (max-width:1024px){
     body {
+
         margin: 0;
         padding: 0;
     }
@@ -156,7 +236,7 @@ label {
         padding-left: 1em;
         padding-right: 1em;
         margin: 0;
-        font-size: 90%;
+        font-size: 50%;
         clear: both;
     }
     #hero{
@@ -167,6 +247,7 @@ label {
         padding-left: 2em;
         padding-right: 2em;
     }
+
     main ul{
         margin-left: 2em;
     }
@@ -207,11 +288,11 @@ label {
     main{
         padding: 0;
     }
-    .floatleft{
-        float: none;
+    .floatleft{ 
+        display: none;
     }
     #hero{
-        width: 100%;
+        width: 50%;
         height: auto;
             }
 article {
@@ -221,7 +302,6 @@ article {
    background: none;
    font-size: 8px;
 }
-
 
 form {
    margin-top: 2em;
@@ -243,9 +323,7 @@ label {
         padding: 0.5em;
         margin: 0;
     }
-    #mobile { display: inline;}
-    #desktop { display: none;}
-}
+ 
 table{
     margin: auto;
     width: 60%;
