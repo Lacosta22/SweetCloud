@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Sweet Cloud :: Web Security</title>
+		<meta charset="utf-8">
+		<meta name="viewport" 
+		content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="web74.css">
+		<meta name="description" content="Sweet Cloud is a heavenly cotton candy store. We rent cotton candy machines and sell supplies needed to make cotton candy.">
+		 <script src="js/modernizr.custom.05819.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+		<header>
+			<h1>Sweet Cloud</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a> 
+				<li><a href="recipes.html">Recipes</a> 
+				<li><a href="ideas.html">Ideas</a>
+				<li><a href="contact.html">Contact</a>
+				<li><a href="store.html">Store</a>
+			</ul>	  
+		</nav>
+		<main>
+			<div id="hero">
+			<h2>Web Security Tips</h2>
+			<p><span class="web">What is Web Security?</span> &nbsp;In general, web security refers to the protective measures and protocols that organizations adopt to protect the organization from, cyber criminals and threats that use the web channel. Web security is critical to business continuity and to protecting data, users and companies from risk.</p>
+			<p><span class="web">Why should I care about website security?</span>&nbsp;Cyber attacks against public-facing websites—regardless of size—are common. To learn more about how you can be affected and what you can do to keep your personal information safe on the web visit the following links.</p>
+	
+			<ul>
+				<li><a href="https://www.mimecast.com/content/web-security/">CyberSecurity and Infrastructure Security Agency - Security Tips</a></li>
+				<li><a href="https://rickscloud.com/best-practices-for-safe-web-browsing/">Best Practices for Safe Web Browsing</a></li>
+				<li><a href="https://www.forbes.com/advisor/business/software/why-use-a-vpn/">9 Reasons Why Everyone Should Use a VPN, Even Non-Techies.</a></li>
+				<li><a href="https://www.fortinet.com/resources/cyberglossary/what-is-web-security">What is Web Security and Website Security?</a></li>
+			</ul>
+			<p id="browser"></p>
+			<script>
+				var txt = "";
+				txt += "<p>Browser Name: " + navigator.appName + "</p>";
+				txt += "<p>Browser Version: " + navigator.appVersion + "</p>";
+				txt += "<p>Platform: " + navigator.platform + "</p>";
+				txt += "<p>User Agent: " + navigator.userAgent + "</p>";
+				txt += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+				txt += "<p>Browser Language: " + navigator.language + "</p>";
+				document.getElementById("browser").innerHTML = txt;
+				</script>
+		
+			</div> 
+			</main>
+			<footer>
+			</footer>
+		</div>
+		
+	</body>
+</html>
