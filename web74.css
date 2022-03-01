@@ -105,10 +105,11 @@ audio{
 article {
    margin-top: 2.9em;
    width: 990px;
-   height: 350px;
+   height: auto;
    background: none;
    font-size: 14px;
 }
+
 input {
     float: left;
 }
@@ -182,7 +183,8 @@ span.psw {
                margin-top: 4em;
                
              }
-#mySubmit { margin-top: 15em;
+#mySubmit { margin-top: 2em;
+            margin-left: 50em;
             float: left;
             }
 .web { font-style: italic;
@@ -191,6 +193,10 @@ span.psw {
            font-size: 12px;
            color: black;
          }
+
+
+#mstore { display: inline; }
+
 /* MOBILE SETTINGS
 TRIAL No2*/
 @media screen and (max-width: 300px) {

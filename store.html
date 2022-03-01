@@ -4,7 +4,7 @@
 		<title>Sweet Cloud :: Store</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="web74.css">
+		<link rel="stylesheet" type="text/css" href="recipes.css">
 		<meta name="description" content="Sweet Cloud is a heavenly candy store where we specialize in Cotton Candy.">
 		<script src="js/modernizr.custom.05819.js"></script>
 	</head>
@@ -17,7 +17,6 @@
 			<ul>
 				<li><a href="index.html">Home</a> 
 				<li><a href="recipes.html">Recipes</a> 
-				<li><a href="ideas.html">Ideas</a>
 				<li><a href="contact.html">Contact</a>
 				<li><a href="store.html">Store</a>
 			</ul>
@@ -30,9 +29,9 @@
          	<fieldset id="custInfo">
             	<legend>Customer Information</legend>
 	            <label for="nameinput">Name</label>
-   	         <input type="text" id="nameinput" name="name" width="5" required="required" />
+   	         <input type="text" id="nameinput" name="name" required="required" />
       	      <label for="addrinput">Street Address</label>
-         	   <input type="text" id="addrinput" name="address" size="5" required="required" />
+         	   <input type="text" id="addrinput" name="address" required="required" />
             	<label for="cityinput">City</label>
             	<input type="text" id="cityinput" name="city" required="required" />
 	            <label for="emailinput">Email</label>
@@ -42,27 +41,28 @@
 	         </fieldset>
    	      </fieldset>
       	   <fieldset id="orderinfo">
+            <fieldset>
+         	   <legend>Order</legend>
+            </fieldset>
             <fieldset id="rental">
-	               <legend>CottonCandy Machine Rental</legend>
-   	            <input type="checkbox" name="rental" id="item1" value="rental" />
+	               <legend>Machine Rental</legend>
+   	            <input type="checkbox" name="rental" id="rental" value="rental" />
       	         <label for="rental">CottonCandy Machine Rental - $50.00</label>
          	</fieldset>
-         </form>   
-            <form method="post" action="">
             <fieldset id="sugars">
                	<legend>Sugar - 3.25lb - $9.00</legend>
-               	<input type="checkbox" id="sugar1" name="item2" value="" />
+               	<input type="checkbox" id="sugar" name="sugar1" value="sugar" />
                	<label for="sugar">Blue Raspberry</label>
-               	<input type="checkbox" id="sugar2" name="item3" value="" />
+               	<input type="checkbox" id="sugar" name="sugar2" value="sugar" />
                	<label for="sugar">Pink Cherry</label>
-               	<input type="checkbox" id="sugar3" name="item4" value="" />
+               	<input type="checkbox" id="sugar" name="sugar3" value="sugar" />
                	<label for="sugar">Yellow Vanilla</label>
 	         </fieldset>
             <fieldset id="payment">
 	               <legend>Payment Type</legend>
    	            <input type="checkbox" id="cash" name="payment" value="cash" />
       	         <label for="cash">Cash</label>
-         	      <input type="checkbox" id="credit" name="payment"  />
+         	      <input type="checkbox" id="credit" name="payment" value="credit" />
             	   <label for="credit">Credit Card</label>
             </fieldset>
             <fieldset id="paymentInfo">
@@ -80,9 +80,26 @@
          	<fieldset id="submitbutton">
             	<input type="submit" id="submitBtn" value="Add to Cart" />
          	</fieldset>
-         	<form method="post" action="">
       	</form>
       	</article>
+      	 <article>
+      <h2>Calculate Elapsed Time</h2>
+    
+   <p>Please enter Date of Rental</p>
+      
+      <form>
+         <fieldset>
+            <legend>Enter Rental Begin Date</legend>
+            <input type="date" id="startDate" value = "" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Enter Rental Return Date</legend>
+            <input type="date" id="endDate" value = ""/>
+         </fieldset>  
+      </form> 
+
+         </script>
       	</main>
 			<footer>
 			</footer>
@@ -108,6 +125,6 @@
       }
       document.getElementById("submit").addEventListener("click", calcTotal, false);
    </script>
-   <script type = >store.js</script>
+   <script type = "store.js"></script>
 	</body>
 </html>
